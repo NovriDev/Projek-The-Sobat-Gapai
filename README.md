@@ -2,6 +2,7 @@
 <div align="center">
   <img src="image/preview.png" alt="preview" width="500"/>
 </div>
+
 ## <b> Tentang Projek </b> <br>
 <b><i>The Solusi Bantuan Tugas Gali Prestasi</i></b> adalah projek yang dimana bertemakan platform digital pendidikan, seperti halnya forum "The Sobat Gapai" ini sama halnya dengan aplikasi-aplikasi forum pendidikan lainnya namun mungkin <br>
 yang berbeda.<br>
