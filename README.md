@@ -1,3 +1,8 @@
+## <b> Preview Splash Screen </b><br>
+<div align="center">
+  <img src="image/splashscreen.gif" alt="preview" width="500"/>
+</div><br>
+
 ## <b> Preview Project </b><br>
 <div align="center">
   <img src="image/preview.png" alt="preview" width="500"/>
