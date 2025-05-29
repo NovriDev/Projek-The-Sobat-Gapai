@@ -1,0 +1,117 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/toolbar_dark">
+
+    <!-- RecyclerView Include -->
+    <include
+        android:layout_margin="5dp"
+        android:id="@+id/recyclerview"
+        layout="@layout/main_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/LL1"/>
+
+    <!-- Bottom Input Layout -->
+    <LinearLayout
+        android:id="@+id/LL_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:background="@drawable/rounded_rectangle"
+        android:layout_above="@id/LL1"
+        android:backgroundTint="#707070">
+        <TextView
+            android:id="@+id/subject_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat_semibold"
+            android:layout_weight="1"
+            android:text="Username"/>
+
+        <ImageView
+            android:id="@+id/cancel_reply"
+            android:src="@drawable/ic_cancel"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:tint="#FF8383"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/LL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:background="@drawable/rounded_rectangle"
+        android:backgroundTint="#515356">
+
+        <ImageView
+            android:id="@+id/upload_img"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/ic_upload"
+            app:tint="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Image uploaded section -->
+            <ImageView
+                android:id="@+id/uploaded_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone"
+                android:src="@drawable/tugas"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*Mohon jawab sesuai materi"
+                android:textColor="#FF0000"
+                android:fontFamily="@font/montserrat_semibold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/deskripsi"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:padding="10dp"
+                    android:hint="Ketik Jawaban Anda..."
+                    android:textColor="@color/white"
+                    android:inputType="textMultiLine"
+                    android:textSize="15sp"
+                    android:textColorHint="@color/white"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="#80FFFFFF"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/montserrat_light" />
+
+                <ImageView
+                    android:id="@+id/send"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/send" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

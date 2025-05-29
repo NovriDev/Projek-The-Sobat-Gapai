@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">
+<!--            Ganti dengan IPLokal / Change to you IPLocal-->
+<!--            example IPLocal and Port = http://192.100.10.1:8080/-->
+        </domain>
+    </domain-config>
+</network-security-config>

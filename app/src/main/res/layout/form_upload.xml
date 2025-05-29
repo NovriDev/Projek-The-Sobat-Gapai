@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/toolbar_dark">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        <TextView
+            android:id="@+id/tv_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FORM UPLOAD"
+            android:background="@drawable/rounded_corner"
+            android:textAlignment="center"
+            android:textSize="28sp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:backgroundTint="#2C2A2A"
+            android:textColor="@color/white"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_form"
+        android:id="@+id/tv_mapel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mata Pelajaran"
+        android:textSize="20sp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/white"/>
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_below="@id/tv_mapel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <RadioButton
+            android:id="@+id/radio_math"
+            android:fontFamily="@font/montserrat_light"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matematika"/>
+
+        <RadioButton
+            android:id="@+id/radio_science"
+            android:fontFamily="@font/montserrat_light"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IPA"/>
+
+        <RadioButton
+            android:id="@+id/radio_history"
+            android:fontFamily="@font/montserrat_light"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sejarah"/>
+
+        <RadioButton
+            android:id="@+id/radio_pkn"
+            android:fontFamily="@font/montserrat_light"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PKN"/>
+
+        <RadioButton
+            android:id="@+id/radio_language"
+            android:fontFamily="@font/montserrat_light"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bahasa Indonesia"/>
+
+        <RadioButton
+            android:id="@+id/radio_language_english"
+            android:fontFamily="@font/montserrat_light"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bahasa Inggris"/>
+
+        <RadioButton
+            android:id="@+id/radio_religion_islam"
+            android:fontFamily="@font/montserrat_light"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pendidikan Agama Islam"/>
+
+        <RadioButton
+            android:id="@+id/radio_religion_kristen"
+            android:fontFamily="@font/montserrat_light"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pendidikan Agama Kristen"/>
+
+        <RadioButton
+            android:id="@+id/radio_sbk"
+            android:fontFamily="@font/montserrat_light"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seni Budaya"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_materi"
+        android:layout_below="@id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Materi"/>
+
+    <EditText
+        android:id="@+id/etMateri"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tv_materi"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/montserrat_light"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:background="@drawable/rounded_corner_field"/>
+
+        <TextView
+            android:id="@+id/tv_deskripsi"
+            android:layout_below="@id/etMateri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Deskripsi"/>
+
+        <EditText
+            android:id="@+id/et_deskripsi"
+            android:gravity="top"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_light"
+            android:maxLength="150"
+            android:layout_below="@id/tv_deskripsi"
+            android:layout_width="match_parent"
+            android:inputType="textMultiLine"
+            android:layout_height="150dp"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_corner_field"/>
+
+    <TextView
+        android:id="@+id/tv_gambar"
+        android:layout_below="@id/et_deskripsi"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="Gambar Tugas"/>
+
+        <TextView
+            android:id="@+id/warning"
+            android:visibility="gone"
+            android:layout_below="@id/tv_gambar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFEB3B"
+            android:text="*Gambar yang Anda unggah harus sesuai dengan materi"/>
+<LinearLayout
+    android:id="@+id/RL1"
+    android:layout_below="@id/warning"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+    <ImageView
+        android:id="@+id/img_tugas"
+        android:layout_width="200dp"
+        android:layout_marginTop="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_add_tugas"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_corner_img_upload"
+        android:layout_height="250dp"/>
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/btnRemoveImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="top"
+        app:tint="#FF4D4D"
+        android:src="@drawable/ic_cancel"/>
+</LinearLayout>
+    <Button
+        android:layout_marginTop="15dp"
+        android:id="@+id/btn_upload"
+        android:layout_below="@id/RL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_semibold"
+        android:background="@drawable/button_gradient"
+        android:text="Upload"/>
+    </RelativeLayout>
+</ScrollView>

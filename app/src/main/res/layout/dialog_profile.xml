@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#2E2C2C"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/user_placeholder"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/level_user_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/montserrat_semibold"
+        android:background="@drawable/rounded_corner_field"
+        android:backgroundTint="#008EFF"
+        android:textColor="@color/white"
+        android:text="Level : 0"/>
+
+    <TextView
+        android:id="@+id/created_account_dialog"
+        android:layout_marginTop="12sp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_light"
+        android:text="Bergabung pada"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Name"
+        android:fontFamily="@font/montserrat_semibold"
+        android:background="@drawable/rounded_corner_field"
+        android:textColor="@color/white"
+        android:backgroundTint="#535151"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/tvBio"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="top"
+        android:text="Bio"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_semibold"
+        android:background="@drawable/rounded_corner_field"
+        android:backgroundTint="#535151"
+        android:textSize="18sp"/>
+
+</LinearLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:layout_marginTop="20dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:backgroundTint="@color/toolbar_dark"
+    android:background="@drawable/rounded_rectangle">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/user_placeholder"
+            android:scaleType="centerCrop"
+            android:background="@drawable/rounded_rectangle"
+            android:clipToOutline="true" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="USERNAME"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="8dp"
+                    android:textColor="@android:color/white" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•"
+                    android:textSize="20sp"
+                    android:layout_marginEnd="8dp"
+                    android:textColor="@color/white" />
+                <TextView
+                    android:id="@+id/tv_keterangan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Keterangan"
+                    android:fontFamily="@font/montserrat_light"
+                    android:textSize="16sp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:textColor="@android:color/white" />
+                <TextView
+                    android:id="@+id/tv_lapor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Laporkan"
+                    android:fontFamily="@font/montserrat_light"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="8dp"
+                    android:textColor="#FF3C3C" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_mapel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mapel"
+                    android:fontFamily="@font/montserrat_semibold"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="8dp"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="•"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="8dp"
+                    android:textColor="@android:color/darker_gray" />
+                <TextView
+                    android:id="@+id/tv_waktu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 jam yang lalu"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:textColor="@android:color/darker_gray" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Gambar -->
+    <ImageView
+        android:id="@+id/post_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_mapel_placeholder" />
+
+    <!-- Aksi -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_favorite"
+                android:layout_marginEnd="4dp"
+                android:textColor="@android:color/white" />
+            <TextView
+                android:id="@+id/tv_like_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginTop="2dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat_semibold"
+                android:layout_marginEnd="16dp"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bagikan"
+            android:textStyle="bold"
+            android:drawableStart="@drawable/ic_share"
+            android:fontFamily="@font/montserrat_semibold"
+            android:drawablePadding="2dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnJawab"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:backgroundTint="#40D9D9D9"
+            android:drawableLeft="@drawable/ic_add_answer"
+            android:text="Bantu jawab tugas ?"
+            android:background="@drawable/rounded_corner"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:paddingVertical="5dp"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tv_sub_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USERNAME"
+        android:textColor="@color/white"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/montserrat_semibold"/>
+    <TextView
+        android:id="@+id/tv_deskripsi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_light"
+        android:text="Deskripsi"
+        android:textColor="@color/white"/>
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

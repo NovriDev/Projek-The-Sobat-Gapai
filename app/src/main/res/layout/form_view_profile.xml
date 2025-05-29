@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!-- Background Profile -->
+    <ImageView
+        android:background="@drawable/rounded_corner_field"
+        android:id="@+id/bgProfile"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:scaleType="centerCrop"
+        android:src="#272626"/>
+
+    <!-- Foto Profil (Lingkaran) -->
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/user_placeholder"
+        android:elevation="4dp"
+        android:padding="2dp"/>
+
+            <TextView
+                android:id="@+id/level"
+                android:layout_below="@id/profileImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dp"
+                android:text="Level 0"
+                android:background="@drawable/rounded_corner"
+                android:textSize="20sp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/white"/>
+    <!-- Nama User -->
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USERNAME"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_below="@id/level"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+
+    <!-- Deskripsi / Bio -->
+    <TextView
+        android:id="@+id/tvBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BIO"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_below="@id/tvUsername"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+        <TextView
+            android:id="@+id/created_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2025"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_below="@id/tvBio"
+            android:fontFamily="@font/montserrat_light"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"/>
+
+    <!-- Container Statistik -->
+    <LinearLayout
+        android:layout_below="@id/bgProfile"
+        android:id="@+id/statsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/rounded_corner_field"
+        android:backgroundTint="#454545"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <!-- Friends -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTugasCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TUGAS"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <!-- Following -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvFollowingCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DIIKUTI"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <!-- Followers -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvFollowerCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PENGIKUT"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Postingan Tugas"
+            android:layout_marginTop="5dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textColor="@color/white"
+            android:layout_below="@+id/statsContainer"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/tv1"
+        android:layout_marginTop="12dp"
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </RelativeLayout>
+</ScrollView>

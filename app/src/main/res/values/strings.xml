@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">THE SOBAT GAPAI</string>
+    <string name="tentang_apk">
+        <b>Aplikasi The Sobat Gapai\n</b>
+        The Sobat Gapai adalah aplikasi pendidikan berbasis mobile dengan berbagai fitur untuk membantu siswa dan pengguna lainnya berkolaborasi dalam menyelesaikan tugas.
+        Aplikasi ini dirancang untuk menciptakan komunitas pembelajaran yang interaktif,
+        di mana pengguna dapat saling membantu dan mendapatkan penghargaan atas kontribusinya.\n\n
+        <b>Keunggulan Aplikasi\n</b>
+        Interaktif: Menghubungkan pengguna dengan orang lain dalam komunitas pendidikan.
+        Rewarding System: Memotivasi pengguna untuk aktif berkontribusi melalui penghargaan seperti badge dan level.
+        Manajemen Tugas yang Mudah: Tugas dapat diunggah, disimpan, dan dilaporkan sesuai kebutuhan.
+        Personalisasi Profil: Memberikan fleksibilitas kepada pengguna untuk menyesuaikan profil mereka.
+</string>
+    <string name="reply_format"><b>Membalas jawaban dari</b></string>
+    <string name="ket_level"><b>XP Level 0 : </b> Pemula \n<b>XP Level 100 - level 249 : </b> Mahasiswa \n<b>XP Level 250 - level 399 : </b> Ahli \n<b>XP Level 400 - 499 : </b> Profesor \n<b>XP Level +500 : </b>Pakar</string>
+    <string name="ket_level_up"><b>Cara Naik XP Level : \n</b>Anda bisa dengan cara upload tugas atau menjawab tugas \n<b>Upload : </b>15 XP \n<b>Bantu Jawab Tugas : </b>25 XP</string>
+    <string name="ket_balance"><b>Top Up :</b> Belum Tersedia Untuk Fitur Ini! \n \n<b>Level :</b> Melihat aktivitas level XP pengguna \n \n<b>Tarik :</b> Belum Tersedia Untuk Fitur Ini!</string>
+    <string name="register_intro">Siap belajar seru,\nsambil tambah teman?\nDaftar sekarang,\ntingkatkan pengetahuanmu\nbersama komunitas kami!</string>
+</resources>

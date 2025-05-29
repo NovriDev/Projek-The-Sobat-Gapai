@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="15dp"
+    android:layout_below="@id/LL2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CC2B2B2B"
+    android:orientation="vertical">
+    <TextView
+        android:background="@drawable/rounded_corner_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ajuan Permohonan Banding Akun"
+        android:layout_marginTop="25dp"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/white"/>
+    <EditText
+        android:id="@+id/username"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#393939"
+        android:background="@drawable/rounded_corner_field"
+        android:drawableTint="#80FFFFFF"
+        android:layout_width="match_parent"
+        android:hint="Masukkan Nama Yang Diban"
+        android:textColorHint="@color/white"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/white"
+        android:textAlignment="textStart"
+        android:drawablePadding="20dp"
+        android:layout_height="60dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/white"/>
+    <EditText
+        android:id="@+id/email"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#393939"
+        android:background="@drawable/rounded_corner_field"
+        android:drawableTint="#80FFFFFF"
+        android:layout_width="match_parent"
+        android:hint="Masukkan Email Yang Diban"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/white"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/white"
+        android:textAlignment="textStart"
+        android:drawablePadding="20dp"
+        android:layout_height="60dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alasan Banding"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/white"/>
+    <EditText
+        android:id="@+id/ajuan"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#393939"
+        android:background="@drawable/rounded_corner_field"
+        android:drawableTint="#80FFFFFF"
+        android:layout_width="match_parent"
+        android:hint="Masukkan Deskripsi"
+        android:textColorHint="@color/white"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/white"
+        android:drawablePadding="20dp"
+        android:gravity="top"
+        android:layout_height="100dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/montserrat_light"
+        android:text="*Form ini akan otomatis pindah ke Gmail jika Anda menekan tombol 'Selesai'"
+        android:textColor="#FFEB3B"/>
+    <Button
+        android:id="@+id/btn_selesai"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_gradient"
+        android:text="Selesai"/>
+    </LinearLayout>
+</LinearLayout>

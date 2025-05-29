@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- TextView untuk menampilkan pesan jika tidak ada notifikasi -->
+    <TextView
+        android:id="@+id/tv_no_notifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tidak ada notifikasi"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_no_notifications" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <TextView
+        android:id="@+id/noResultsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Pencarian tidak ditemukan"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spinner"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/black" />
+
+</RelativeLayout>

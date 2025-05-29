@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Fragment.HomeFragment">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@color/toolbar_dark"
+        android:elevation="4dp"
+        app:titleTextColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+        <TextView
+            android:layout_marginTop="45dp"
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="title"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white" />
+        <ImageView
+            android:id="@+id/search"
+            android:layout_gravity="end"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <VideoView
+        android:id="@+id/videoBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_below="@+id/toolbar"/>
+
+    <FrameLayout
+        android:id="@+id/jawaban_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_below="@+id/toolbar"
+        android:visibility="gone"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemTextColor="@color/white"
+        app:itemIconTint="@color/botton_nav_item"
+        android:background="@color/toolbar_dark"
+        app:itemBackground="@drawable/bottom_nav_item_bg"
+        app:menu="@menu/bottom_nav_menu" />
+</RelativeLayout>

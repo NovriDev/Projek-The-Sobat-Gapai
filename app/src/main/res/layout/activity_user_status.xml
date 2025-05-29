@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Gambar Profil -->
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/user_placeholder"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Nama Pengguna -->
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Pengguna"
+            android:fontFamily="@font/montserrat_semibold"
+            android:textSize="20sp"
+            android:backgroundTint="#535050"
+            android:background="@drawable/rounded_corner_field"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Status Level -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:backgroundTint="#535050"
+            android:background="@drawable/status_background">
+
+            <ImageView
+                android:id="@+id/imgStatus"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/rounded_corner_field"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textSize="16sp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <!-- XP Bar -->
+        <TextView
+            android:id="@+id/tvXpPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XP: 0/100"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp" />
+
+        <ProgressBar
+            android:id="@+id/progressXp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:progress="0"
+            android:max="100"
+            android:progressDrawable="@drawable/custom_progressbar" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/ket_level"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/ket_level_up"/>
+
+    </LinearLayout>
+</ScrollView>
