@@ -1,7 +1,7 @@
 ## <b> Preview Splash Screen </b><br>
 <div align="center">
   <video width="500" controls>
-  <source src="image/preview.mp4" type="video/mp4">
+  <source src="image/splashscreen.mp4" type="video/mp4">
 </video>
 </div><br>
 
