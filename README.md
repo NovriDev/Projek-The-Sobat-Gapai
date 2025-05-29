@@ -1,6 +1,8 @@
 ## <b> Preview Splash Screen </b><br>
 <div align="center">
-  <img src="image/splashscreen.gif" alt="preview" width="500"/>
+  <video width="500" controls>
+  <source src="image/preview.mp4" type="video/mp4">
+</video>
 </div><br>
 
 ## <b> Preview Project </b><br>
