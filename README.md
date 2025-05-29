@@ -1,6 +1,6 @@
 ## <b> Preview Splash Screen </b><br>
 <div align="center">
-  <img src="image/splashscreen.gif" alt="preview" width="500" height="500"/>
+  <img src="image/splashscreen.gif" alt="preview" width="500" height="800"/>
 </div><br>
 
 ## <b> Preview Project </b><br>
