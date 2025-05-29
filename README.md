@@ -1,5 +1,5 @@
 ## <b> Preview Project </b><br>
-<p align="center"><img src="image/preview.png" alt="preview" width="500" height="500"></p><br>
+<img src="image/preview.png" alt="preview" width="500" height="500" align="center"/><br>
 ## <b> Tentang Projek </b> <br>
 <b><i>The Solusi Bantuan Tugas Gali Prestasi</i></b> adalah projek yang dimana bertemakan platform digital pendidikan, seperti halnya forum "The Sobat Gapai" ini sama halnya dengan aplikasi-aplikasi forum pendidikan lainnya namun mungkin <br>
 yang berbeda.<br>
