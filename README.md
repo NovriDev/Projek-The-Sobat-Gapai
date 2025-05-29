@@ -10,7 +10,7 @@
 
 ## <b> Tentang Projek </b> <br>
 <b><i>The Solusi Bantuan Tugas Gali Prestasi</i></b> adalah projek yang dimana bertemakan platform digital pendidikan, seperti halnya forum "The Sobat Gapai" ini sama halnya dengan aplikasi-aplikasi forum pendidikan lainnya namun mungkin <br>
-yang berbeda.<br>
+ada yang berbeda.<br>
 ## <b> About the Project </b> <br>
 <b><i>The Solusi Bantuan Tugas Gali Prestasi</i></b> is a project that has a digital education platform theme, like the "The Sobat Gapai" forum, this is the same as other educational forum applications but maybe <br>
 different.<br>
