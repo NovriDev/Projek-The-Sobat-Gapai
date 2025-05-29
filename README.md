@@ -1,10 +1,10 @@
-<b> ## Tentang Projek </b> <br>
+<b>##Tentang Projek </b> <br>
 <b><i>The Solusi Bantuan Tugas Gali Prestasi</i></b> adalah projek yang dimana bertemakan platform digital pendidikan, seperti halnya forum "The Sobat Gapai" ini sama halnya dengan aplikasi-aplikasi forum pendidikan lainnya namun mungkin <br>
 yang berbeda.<br>
-<b> ## About the Project </b> <br>
+<b>##About the Project </b> <br>
 <b><i>The Solusi Bantuan Tugas Gali Prestasi</i></b> is a project that has a digital education platform theme, like the "The Sobat Gapai" forum, this is the same as other educational forum applications but maybe <br>
 different.<br>
-<b> ## Fitur-fitur Pengguna The Sobat Gapai </b><br>
+<b>##Fitur-fitur Pengguna The Sobat Gapai </b><br>
 - Upload tugas.<br>
 - Tambah pertemanan atau menerima pertemanan.<br>
 - Pantau notifikasi.<br>
@@ -13,12 +13,12 @@ different.<br>
 - Menjawab tugas & mendapat xp untuk level.<br>
 - Lihat riwayat level.<br>
 - Ajuan permohonan banding akun.<br>
-<b> ## Fitur-fitur Admin The Sobat Gapai via Website </b><br>
+<b>##Fitur-fitur Admin The Sobat Gapai via Website </b><br>
 - Monitoring pengguna.<br>
 - Ban pengguna.<br>
 - Hapus tugas pengguna.<br>
 - Hapus jawaban pengguna.<br>
-<b> ## The Sobat Gapai User Features </b><br>
+<b>##The Sobat Gapai User Features </b><br>
 - Upload assignments.<br>
 - Add or accept friends.<br>
 - Monitor notifications.<br>
