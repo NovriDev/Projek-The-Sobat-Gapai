@@ -7,7 +7,7 @@
 </p>
 
 ## About API
-This is the API from the sobat gapai project and uses Laravel 11 in making it.
+This is the API from <b><i>The Sobat Gapai</i></b> project and uses Laravel 11 in making it.
 
 ## Laravel Required
 - PHP v 8.2
